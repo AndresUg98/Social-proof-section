@@ -5,8 +5,15 @@
 body{
     margin: 0%;
     font-family: 'Spartan', sans-serif;
-    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
+}
+
+a{
+    text-decoration: none;
 }
 
 .main-container{
@@ -63,17 +70,78 @@ body{
     color: hsl(300, 43%, 22%);
 }
 
+.review-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .card-container{
     display: grid;
     grid-template-columns: 340px;
-    grid-template-rows: 150px 200px;
+    grid-template-rows: 100px 170px;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 25px;
+    border-radius: 8px;
     background-color: hsl(300, 43%, 22%);
+
+
 }
+
 
 .person-info{
     display: flex;
+    padding: 30px 0 0 30px; 
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .person-info div img{
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
+}
+
+.person-info div:nth-child(2){
+
+    margin-left: 20px;
+}
+
+.person-info div:nth-child(2) h4{
+    
+    color: white;
+    margin-bottom: 0;
+}
+
+.person-info p{
+    color:  hsl(333, 80%, 67%);
+    margin-top: 7px;
+}
+
+.card-text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 0px 38px 15px 30px;
+    color: hsl(300, 24%, 96%)
+    
+}
+
+.attribution{
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.attribution a{
+
+    color:hsl(300, 43%, 22%);
+    
+}
+
+@media (min-width:640px) {
+    
 }
