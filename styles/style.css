@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
 
+html{
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
 
 body{
     margin: 0%;
@@ -9,6 +14,9 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-image: url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
 
 }
 
@@ -151,12 +159,29 @@ a{
     
 }
 
+
+
 @media (min-width:1024px) {
+
+    html{
+        background-image: url("../images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    body{
+        background-image: url("../images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        
+
+        
+    }
     .main-container{
         width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 450px 390px;
+        grid-template-rows: 450px 420px;
         text-align: left;
         grid-template-areas: "description-container reating-container"
                                 "review-container review-container";
@@ -164,11 +189,11 @@ a{
 
 
     .description-container h1{
-        font-size: 60px;
+        font-size: 45px;
     }
 
     .description-container p{
-        font-size: 20px;
+        font-size: 16px;
         line-height: 30px;
 
     }
@@ -207,9 +232,9 @@ a{
 
 
     .reating-item p{
-        margin: 5px 0 0 50px;
-        padding-right: 20px;
-        font-size: 16.5px;
+        margin: 5px 0 0 15px;
+        padding-right: 10px;
+        font-size: 15px;
 
     }
 
@@ -219,8 +244,8 @@ a{
     }
 
     .card-container{
-        height: 250px;
-        grid-template-columns: 385px;
+        height: 280px;
+        grid-template-columns: 290px;
         
   
     }
@@ -261,6 +286,63 @@ a{
 
         
     }
+
+    
+
+}
+
+
+@media (min-width:1440px) {
+
+
+    .main-container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px 390px;
+        text-align: left;
+        grid-template-areas: "description-container reating-container"
+                                "review-container review-container";
+    }
+
+
+    .description-container h1{
+        font-size: 60px;
+    }
+
+    .description-container p{
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+
+    .reating-item{
+        width: 80%;
+        height: 70px;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+
+
+    }
+
+    .reating-item p{
+        margin: 5px 0 0 50px;
+        padding-right: 20px;
+        font-size: 16.5px;
+
+    }
+
+
+    .card-container{
+        height: 250px;
+        grid-template-columns: 385px;
+        
+  
+    }
+
+
 
     
 
